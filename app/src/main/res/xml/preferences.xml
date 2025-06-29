@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="api_base_url"
+        android:title="URL de base de l'API"
+        android:summary="URL de l'API todo-api"
+        android:defaultValue="http://tomnab.fr/todo-api/api/" />
+
+    <EditTextPreference
+        android:key="pseudo"
+        android:title="Pseudo par défaut"
+        android:summary="Changer le pseudo par défaut"
+        android:defaultValue="" />
+
+    <EditTextPreference
+        android:key="password"
+        android:title="Mot de passe par défaut"
+        android:summary="Changer le mot de passe par défaut"
+        android:defaultValue=""
+        android:inputType="textPassword" />
+
+    <SwitchPreference
+        android:key="auto_login"
+        android:title="Connexion automatique"
+        android:summary="Se connecter automatiquement au démarrage"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="clear_history"
+        android:title="Vider l'historique"
+        android:summary="Supprimer le dernier pseudo saisi" />
+
+    <Preference
+        android:key="logout"
+        android:title="Déconnexion"
+        android:summary="Se déconnecter et supprimer le token" />
+</PreferenceScreen>
